@@ -60,7 +60,7 @@ for i in range(0, len(listDir)):
 
 
 
-dataSwissCanadianGerman = pd.read_csv('Data_swiss_canadian_and_german_pol.csv')
+dataSwissCanadianGerman = pd.read_csv('data_politicians_UK_CA_CH_DE.csv')
 
 #dataImageJSON = pd.read_csv('Data collection/filesharing_political_science/data/crowdtangle/id_hash_mapping.csv')
 
@@ -565,7 +565,7 @@ for i in list(range(0, len(pathToFiles))):
             dta_faces = get_image_faces(pathToFiles[i][:-5] + ".jpg",img_ref_url,pathToFiles[i], img_url_ref_leader1, img_url_ref_leader2)
             
             data_faces = pd.concat([data_faces,dta_faces])
-            data_faces.to_csv('Data collection 2/out_data_test4.csv') 
+            data_faces.to_csv('out_data_test.csv') 
         print(i)
         #print(img_ref_url)
         #print(img_url)
